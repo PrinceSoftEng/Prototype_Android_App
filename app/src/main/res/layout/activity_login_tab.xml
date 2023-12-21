@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F5"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginTab">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginTop="-40dp"
+        android:gravity="top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rentapp1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="260dp"
+        android:gravity="center"
+        android:text="Apartment Rented App"
+        android:textColor="@color/material_on_surface_emphasis_medium"
+        android:textColorHighlight="#141313"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emaillayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="text"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordlayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emaillayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#000">
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/forgotpasswordlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="465dp"
+        android:gravity="center_horizontal"
+        android:text="Forgot Password?"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlayout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/blue"
+        android:text="Login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="100dp"
+        android:textSize="18dp"
+        android:gravity="center_horizontal"
+        android:text="New User." />
+
+    <TextView
+        android:id="@+id/registerlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="-90dp"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        android:text="Click to Register" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerlink"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="COPYRIGHT 2023 RENTED APP.\n ALL RIGHTS RESERVED"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
